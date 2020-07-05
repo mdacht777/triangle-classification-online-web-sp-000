@@ -11,5 +11,6 @@ class Triangle
   end
   def kind
     :equilateral if @a=@b and @b=@c  
+    :isosceles if @a=@b or @a=@c @b=@c 
   end
 end
