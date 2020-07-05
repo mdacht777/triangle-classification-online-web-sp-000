@@ -15,8 +15,10 @@ class Triangle
       kind=:scalene
     
     elsif @a==@b and @b==@c  
-      kind=:equilateral
-    
+      if @a==0
+      else
+        kind=:equilateral
+      end
     elsif @a==@b or @b==@c or @a==@c
       kind=:isosceles
     end
