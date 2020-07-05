@@ -25,7 +25,7 @@ class Triangle
     elsif @a==@b or @b==@c or @a==@c
       kind=:isosceles
     end
-    if (@a<=0 or @b<=0 or @c<=0) or ((@a+@b<@c) or (@b+@c<@a) or (@c+@a<@b))
+    if (@a<=0 or @b<=0 or @c<=0) or ((@a+@b<=@c) or (@b+@c<=@a) or (@c+@a<=@b))
       raise TriangleError
     end
     puts kind
