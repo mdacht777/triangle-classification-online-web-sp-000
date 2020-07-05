@@ -14,9 +14,6 @@ class Triangle
     if @a!=@b and @a!=@c and @b!=@c
       kind=:scalene
     end
-    if @a=@b or @a=@c or @b=@c
-      kind=:isosceles
-    end
     if @a=@c and @b=@c  
       kind=:equilateral
     end
