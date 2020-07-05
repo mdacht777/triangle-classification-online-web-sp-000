@@ -18,13 +18,15 @@ class Triangle
       kind=:scalene
     
     elsif @a==@b and @b==@c  
-      if @a==0 or (@a<1 or @b<1 or @c<1)
+      if @a==0
         raise TriangleError
       else
         kind=:equilateral
       end
     elsif @a==@b or @b==@c or @a==@c
       kind=:isosceles
+    elsif (@a<1 or @b<1 or @c<1)
+        raise TriangleError
     end
     puts kind
     kind
