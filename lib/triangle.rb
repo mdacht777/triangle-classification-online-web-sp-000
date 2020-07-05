@@ -17,7 +17,9 @@ class Triangle
     if @a==@b and @b==@c  
       kind=:equilateral
     end
-    
+    if @a==@b or @b==@c or @a==@c
+      kind=:isosceles
+    end
     puts kind
     kind
   end
