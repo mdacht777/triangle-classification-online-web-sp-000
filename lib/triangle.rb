@@ -11,7 +11,7 @@ class Triangle
   end
   def kind
     kind=""
-    if @a!=@b and @a!=@c and b!=@c
+    if @a!=@b and @a!=@c and @b!=@c
       kind=:scalene
     end
     if @a=@b or @a=@c or @b=@c
