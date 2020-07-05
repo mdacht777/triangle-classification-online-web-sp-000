@@ -14,6 +14,8 @@ class Triangle
       :equilateral 
     elsif @a=@b or @a=@c or @b=@c
       :isosceles
+    elsif @a!=b and @a!=c and b!=c
+      :scalene
     end
   end
 end
