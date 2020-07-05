@@ -10,7 +10,6 @@ class Triangle
     # triangle error code
   end
   def kind
-    puts @a,@b,@c
     kind=""
     if @a!=@b and @a!=@c and @b!=@c
       kind=:scalene
@@ -18,6 +17,7 @@ class Triangle
     if @a=@b and @b=@c  
       kind=:equilateral
     end
+    puts @a+":"+@b+":"+@c+":"+kind
     kind
   end
 end
