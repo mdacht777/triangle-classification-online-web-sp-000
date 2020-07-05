@@ -15,11 +15,7 @@ class Triangle
   def kind
     kind=""
     if @a!=@b and @a!=@c and @b!=@c
-      if (@a<1 or @b<1 or @c<1)
-        raise TriangleError
-      else
-        kind=:scalene
-      end
+      kind=:scalene
     elsif @a==@b and @b==@c  
       if @a==0
         raise TriangleError
@@ -28,6 +24,9 @@ class Triangle
       end
     elsif @a==@b or @b==@c or @a==@c
       kind=:isosceles
+    end
+    if (@a<1 or @b<1 or @c<1)
+      raise TriangleError
     end
     puts kind
     kind
