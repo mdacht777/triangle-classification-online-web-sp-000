@@ -9,6 +9,6 @@ class Triangle
     # triangle error code
   end
   def kind
-    puts ":equilateral" if @a=@b and @b=@c  
+    ":equilateral" if @a=@b and @b=@c  
   end
 end
