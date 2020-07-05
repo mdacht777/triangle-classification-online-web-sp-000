@@ -13,11 +13,11 @@ class Triangle
     kind=""
     if @a!=@b and @a!=@c and @b!=@c
       kind=:scalene
-    end
-    if @a==@b and @b==@c  
+    
+    elsif @a==@b and @b==@c  
       kind=:equilateral
-    end
-    if @a==@b or @b==@c or @a==@c
+    
+    elsif @a==@b or @b==@c or @a==@c
       kind=:isosceles
     end
     puts kind
