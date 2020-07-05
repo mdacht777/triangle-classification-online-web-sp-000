@@ -16,6 +16,7 @@ class Triangle
     
     elsif @a==@b and @b==@c  
       if @a==0
+        raise TriangleError
       else
         kind=:equilateral
       end
