@@ -10,10 +10,10 @@ class Triangle
     # triangle error code
   end
   def kind
-    if @a=@b or @a=@c or @b=@c
-      :isosceles
-    elsif @a=@b and @b=@c  
+    if @a=@b and @b=@c  
       :equilateral 
+    elsif @a=@b or @a=@c or @b=@c
+      :isosceles
     end
   end
 end
