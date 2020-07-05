@@ -11,14 +11,14 @@ class Triangle
   end
   def kind
     kind=""
-    if @a=@c and @b=@c  
-      kind=:equilateral
+    if @a!=b and @a!=c and b!=c
+      kind=:scalene
     end
     if @a=@b or @a=@c or @b=@c
       kind=:isosceles
     end
-    if @a!=b and @a!=c and b!=c
-      kind=:scalene
+    if @a=@c and @b=@c  
+      kind=:equilateral
     end
     kind
   end
