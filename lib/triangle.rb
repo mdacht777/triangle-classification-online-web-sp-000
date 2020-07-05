@@ -9,7 +9,8 @@ class Triangle
   class TriangleError < StandardError
     # triangle error code
     def message
-      
+      "Foo"
+    end
   end
   def kind
     kind=""
