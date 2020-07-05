@@ -14,7 +14,7 @@ class Triangle
     if @a!=@b and @a!=@c and @b!=@c
       kind=:scalene
     end
-    if @a=@c and @b=@c  
+    if @a=@b and @b=@c  
       kind=:equilateral
     end
     kind
