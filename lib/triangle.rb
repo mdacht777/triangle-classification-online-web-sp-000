@@ -17,7 +17,7 @@ class Triangle
     if @a=@b and @b=@c  
       kind=:equilateral
     end
-    puts @a+":"+@b+":"+@c+":"+kind
+    puts kind
     kind
   end
 end
